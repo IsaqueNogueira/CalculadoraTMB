@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Calculadora TMB</string>
+    <string name="calculadora_tmb">Calculadora TMB</string>
+    <string name="como_determinar_a_sua_necessidade_di_ria_de_calorias_n_mero_imprescind_vel_para_emagrecer_e_n_o_recuperar_os_quilos_perdidos">Como determinar a sua necessidade diária de calorias - número imprescindível para emagrecer e não recuperar os quilos perdidos.</string>
+    <string name="mulheres">Mulheres</string>
+    <string name="homens">Homens</string>
+    <string name="_1_etapa_como_determinar_a_taxa_de_metabolismo_basal_tmb">1º ETAPA - Como determinar a taxa de metabolismo basal (TMB)</string>
+    <string name="o_total_de_calorias_gastas_para_manter_as_fun_es_vitais_como_os_batimentos_card_acos_a_press_o_arterial_e_a_temperatura_corporal">É o total de calorias gastas para manter as funções vitais, como os batimentos cardíacos, a pressão arterial e a temperatura corporal:</string>
+    <string name="peso">PESO: (em quilos)</string>
+    <string name="altura_em_cm">ALTURA: (em cm)</string>
+    <string name="idade">IDADE:</string>
+    <string name="calcular">Calcular</string>
+    <string name="tmb">TMB=</string>
+    <string name="_2_etapa_como_determinar_a_necessidade_di_ria_de_calorias_ndc">2º ETAPA - Como determinar a necessidade diária de calorias (NDC)</string>
+</resources>

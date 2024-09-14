@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_fragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/textViewTitleMainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_blue_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/calculadora_tmb"
+        app:titleTextAppearance="@style/ToolbarTitleTextAppearance"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewDescriptionMainActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/como_determinar_a_sua_necessidade_di_ria_de_calorias_n_mero_imprescind_vel_para_emagrecer_e_n_o_recuperar_os_quilos_perdidos"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/color_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitleMainActivity" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutMainActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/color_background_fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewDescriptionMainActivity" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerActivity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayoutMainActivity" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

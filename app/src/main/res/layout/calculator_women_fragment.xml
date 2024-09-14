@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_fragment"
+    android:padding="16dp"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewFirstStage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_etapa_como_determinar_a_taxa_de_metabolismo_basal_tmb"
+            android:textColor="@color/color_blue_app"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/viewDivider"
+            android:layout_width="0dp"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_gray_diviser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewFirstStage" />
+
+        <TextView
+            android:id="@+id/textViewFirstStageDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/o_total_de_calorias_gastas_para_manter_as_fun_es_vitais_como_os_batimentos_card_acos_a_press_o_arterial_e_a_temperatura_corporal"
+            android:textColor="@color/color_text_gray"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewDivider" />
+
+
+        <EditText
+            android:id="@+id/editTextPeso"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:digits="0123456789"
+            android:hint="@string/peso"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColorHint="@color/color_text_gray"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewFirstStageDescription" />
+
+        <EditText
+            android:id="@+id/editTextAltura"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:digits="0123456789"
+            android:hint="@string/altura_em_cm"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColorHint="@color/color_text_gray"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextPeso" />
+
+        <EditText
+            android:id="@+id/editTextIdade"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:digits="0123456789"
+            android:hint="@string/idade"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColorHint="@color/color_text_gray"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextAltura" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonCalculator"
+            android:layout_width="155dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_button"
+            android:text="@string/calcular"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextIdade" />
+
+        <TextView
+            android:id="@+id/textTmbResult"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/tmb"
+            android:textColor="@color/color_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonCalculator" />
+
+        <TextView
+            android:id="@+id/textViewSecondStage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/_2_etapa_como_determinar_a_necessidade_di_ria_de_calorias_ndc"
+            android:textColor="@color/color_blue_app"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTmbResult" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
