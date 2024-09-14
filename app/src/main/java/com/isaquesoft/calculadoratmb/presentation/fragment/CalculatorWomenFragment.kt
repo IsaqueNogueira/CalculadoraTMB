@@ -42,32 +42,34 @@ class CalculatorWomenFragment : Fragment() {
 
     private fun calculateTmb() {
         with(binding) {
-            textTmbResult.text = requireContext().getString(R.string.tmb)
+            textTmbResult.text = context?.getString(R.string.tmb)
             val peso = editTextPeso.text.toString()
             val altura = editTextAltura.text.toString()
             val idade = editTextIdade.text.toString()
 
             if (TextUtils.isEmpty(peso) || peso == "0") {
-                editTextPeso.error = "Peso inválido"
+                editTextPeso.error = context?.getString(R.string.peso_inv_lido)
                 editTextPeso.requestFocus()
                 return
             }
 
             if (TextUtils.isEmpty(altura) || altura == "0") {
-                editTextAltura.error = "Altura inválida"
+                editTextAltura.error = context?.getString(R.string.altura_inv_lida)
+
                 editTextAltura.requestFocus()
                 return
             }
 
             if (TextUtils.isEmpty(idade) || idade == "0") {
-                editTextIdade.error = "Idade inválida"
+                editTextIdade.error = context?.getString(R.string.idade_inv_lida)
+
                 editTextIdade.requestFocus()
                 return
             }
 
             val tmb =
                 447.593 + (9.247 * peso.toDouble()) + (3.098 * altura.toDouble()) - (4.330 * idade.toDouble())
-            textTmbResult.text = requireContext().getString(R.string.tmb) + " $tmb"
+            textTmbResult.text = context?.getString(R.string.tmb) + " $tmb"
         }
     }
 }

@@ -12,4 +12,7 @@
     <string name="calcular">Calcular</string>
     <string name="tmb">TMB=</string>
     <string name="_2_etapa_como_determinar_a_necessidade_di_ria_de_calorias_ndc">2º ETAPA - Como determinar a necessidade diária de calorias (NDC)</string>
+    <string name="peso_inv_lido">Peso inválido</string>
+    <string name="altura_inv_lida">Altura inválida</string>
+    <string name="idade_inv_lida">Idade inválida</string>
 </resources>
