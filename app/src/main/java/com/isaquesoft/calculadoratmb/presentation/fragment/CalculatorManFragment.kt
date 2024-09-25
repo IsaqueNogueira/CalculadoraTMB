@@ -66,8 +66,8 @@ class CalculatorManFragment : Fragment() {
             }
 
             val tmb =
-                88.362 + (13.397 * peso.toDouble()) + (4.799 * altura.toDouble()) - (5.677 * idade.toDouble())
-            textTmbResult.text = context?.getString(R.string.tmb) + " $tmb"
+                66 + (13.7 * peso.toDouble()) + (5 * altura.toDouble()) - (6.8 * idade.toDouble())
+            textTmbResult.text = context?.getString(R.string.tmb) + " ${String.format("%.2f", tmb)}"
         }
     }
 }

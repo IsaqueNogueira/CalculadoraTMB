@@ -68,8 +68,8 @@ class CalculatorWomenFragment : Fragment() {
             }
 
             val tmb =
-                447.593 + (9.247 * peso.toDouble()) + (3.098 * altura.toDouble()) - (4.330 * idade.toDouble())
-            textTmbResult.text = context?.getString(R.string.tmb) + " $tmb"
+                655 + (9.6 * peso.toDouble()) + (1.8 * altura.toDouble()) - (4.7 * idade.toDouble())
+            textTmbResult.text = context?.getString(R.string.tmb) + " ${String.format("%.2f", tmb)}"
         }
     }
 }

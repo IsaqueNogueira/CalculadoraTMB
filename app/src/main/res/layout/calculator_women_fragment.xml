@@ -9,7 +9,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
 
         <TextView
             android:id="@+id/textViewFirstStage"
@@ -110,15 +111,14 @@
             app:layout_constraintTop_toBottomOf="@id/buttonCalculator" />
 
         <TextView
-            android:id="@+id/textViewSecondStage"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/_2_etapa_como_determinar_a_necessidade_di_ria_de_calorias_ndc"
-            android:textColor="@color/color_blue_app"
+            android:text="@string/refer_ncias_harris_j_a_benedict_f_g_1918_a_biometric_study_of_human_basal_metabolism_proceedings_of_the_national_academy_of_sciences_of_the_united_states_of_america_4_12_370_373"
+            android:textColor="@color/color_text_gray"
+            android:textSize="13sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textTmbResult" />
+            app:layout_constraintTop_toBottomOf="@id/textTmbResult" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
